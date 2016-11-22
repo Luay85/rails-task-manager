@@ -1,0 +1,5 @@
+<ul>
+<% @taskmanagers.each do |task| %>
+  <li><%= link_to task.name, taskmanagers_path(task) %></li>
+<% end %>
+</ul>

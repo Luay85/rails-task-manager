@@ -1,4 +1,4 @@
-class CreateTaskManagers < ActiveRecord::Migration[5.0]
+class CreateTaskManagers < ActiveRecord::Migration
   def change
     create_table :task_managers do |t|
       t.string :name

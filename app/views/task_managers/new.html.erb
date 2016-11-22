@@ -1,0 +1,13 @@
+<h1>Taskmanagers#new</h1>
+<p>Find me in app/views/taskmanagers/new.html.erb</p>
+
+
+<%= form_for @taskmanager do |f| %>
+  <%= f.label :name %>:
+  <%= f.text_field :name %>
+
+  <%= f.label :status %>:
+  <%= f.text_field :status %>
+
+  <%= f.submit %>
+<% end %>

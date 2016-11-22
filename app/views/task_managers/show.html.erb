@@ -1,0 +1,16 @@
+<h1>Taskmanagers#show</h1>
+<p>Find me in app/views/taskmanagers/show.html.erb</p>
+
+<h2><%= @taskmanager.name %></h2>
+<p><%= @taskmanager.status %></p>
+
+
+
+<%= link_to "Delete", task_manager_path(@taskmanager),
+      method: :delete,
+      data: { confirm: "Are you sure?" } %>
+
+
+<%= link_to "Edit Task", edit_task_manager_path %>
+
+
